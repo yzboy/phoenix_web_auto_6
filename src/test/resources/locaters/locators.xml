@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 怎么描述一个页面元素的定位信息
+	注册页面的手机号输入框
+		1、哪个页面
+		2、定位方式
+		3、定位值
+ -->
+<pages>
+
+<!-- 对页面元素定位信息的抽象，程序中描述、抽象-->
+<!--对得到的locator放到什么中 》所有的locator都具有共性、类似 》抽取到类中 》Locator对象来描述-->	
+	<page name="com.lemon.auto.phoenix.testcase.register.RegisterTester">
+		<locator by="id" value="mobilephone" desc="手机号输入框"></locator>
+		<locator by="id" value="password" desc="密码输入框"></locator>
+		<locator by="id" value="pwdconfirm" desc="确认密码输入框"></locator>
+		<locator by="id" value="signup-button" desc="注册按钮"></locator>
+		<locator by="className" value="tips" desc="提示信息"></locator>
+	</page>
+	<page name="com.lemon.auto.phoenix.testcase.register.LoginTester">
+		<locator by="id" value="mobilephone" desc="手机号输入框"></locator>
+		<locator by="id" value="password" desc="密码输入框"></locator>
+		<locator by="id" value="login" desc="登录按钮"></locator>
+		<locator by="id" value="reset" desc="重置按钮"></locator>
+	</page>
+</pages>

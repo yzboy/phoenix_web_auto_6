@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+  <test name="Register">
+    <classes>
+      <class name="com.lemon.auto.phoenix.testcase.register.RegisterTester"/>
+    </classes>   
+   
+  </test> <!-- Test -->
+  <!-- 浏览器类型 ie firefox chrome-->
+  <parameter name="browserType" value="chrome"></parameter>
+  <!-- 可执行驱动路径 
+  chrome：src/test/resources/chromedriver
+  -->
+  <parameter name="driverPath" value="src/test/resources/driver/mac/chromedriver"></parameter>
+  <parameter name="seleniumVersion" value="2.x"></parameter>
+ <listeners>
+ 	<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+ 	<listener class-name="com.lemon.auto.phoenix.testcase.register.PhoenixListenner"></listener>
+ </listeners>
+</suite> <!-- Suite -->
